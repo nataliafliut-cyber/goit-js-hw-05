@@ -1,7 +1,11 @@
+// Deklaracja poprawionej funkcji strzałkowej
 const sortByDescendingFriendCount = (users) => {
+  // b.friends.length - liczba przyjaciół drugiego użytkownika
+  // a.friends.length - liczba przyjaciół pierwszego użytkownika
   return users.toSorted((a, b) => b.friends.length - a.friends.length);
 };
 
+// Kod do sprawdzenia
 console.log(
   sortByDescendingFriendCount([
     {
